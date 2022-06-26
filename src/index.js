@@ -7,7 +7,6 @@ import { BrowserRouter } from "react-router-dom";
 import { UserProvider } from "../src/contexts/user.context";
 import { ProductsProvider } from "./contexts/products.context";
 import { CartProvider } from "./contexts/cart.context";
-import { CartItemProvider } from "./contexts/Cart-item.context";
 
 
 ReactDOM.render(
@@ -17,9 +16,7 @@ ReactDOM.render(
       <UserProvider>
         <ProductsProvider>
           <CartProvider>
-            <CartItemProvider>
               <App />
-            </CartItemProvider>
           </CartProvider>
         </ProductsProvider>
 
